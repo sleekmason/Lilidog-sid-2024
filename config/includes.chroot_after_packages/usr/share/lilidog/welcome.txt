@@ -1,0 +1,18 @@
+                          
+                      WELCOME!
+                        
+    Thank you for installing Lilidog. Please feel
+    free to join the Lilidog discussion forum for
+    further information or if you have any issues 
+    to report.
+
+    https://www.forum.lilidog.org/
+    
+    For initial settings see the 'landscape' icon
+    located in the Tint2 panel. Font size, themes
+    wallpapers, and other options are available.
+    
+    If you would like to customize your system by
+    answering some questions now, press the Begin
+    button below. Type 'welcome' in a terminal to
+    use the customization script at a later time.

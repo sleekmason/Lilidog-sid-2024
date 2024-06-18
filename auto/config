@@ -1,0 +1,27 @@
+#!/bin/sh
+
+lb config noauto \
+     --apt-recommends 'false' \
+     --apt-source-archives 'false' \
+     --apt-indices 'false' \
+     --archive-areas "main contrib non-free non-free-firmware" \
+     --debian-installer 'live' \
+     --debian-installer-distribution 'sid' \
+     --distribution 'sid' \
+     --mirror-binary 'https://deb.debian.org/debian' \
+     --mirror-binary-security 'https://security.debian.org/debian-security' \
+     --mirror-bootstrap 'https://deb.debian.org/debian' \
+     --firmware-binary 'true' \
+     --firmware-chroot 'true' \
+     --security 'false' \
+     --memtest 'memtest86+' \
+     --image-name 'Lilidog-full-sid-24.06.12' \
+     --iso-application 'Lilidog-full-sid' \
+     --iso-publisher 'Lilidog-full-sid GNU/Linux' \
+     --iso-volume 'Lilidog-full-sid' \
+     --system 'live' \
+     --updates 'false' \
+     --win32-loader 'false' \
+     --zsync 'false' \
+     --quiet \
+     "${@}"

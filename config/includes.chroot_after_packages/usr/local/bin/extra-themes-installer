@@ -1,0 +1,41 @@
+#!/bin/bash
+echo ""
+read -p "   [0;33mExtra Themes Installer.[0m
+
+
+   This script will download and install the extra Lilidog themes
+   and add entries to the Auto Themes dialog to match.
+   
+   To remove, use: 
+   [0;33msudo apt remove extra-themes[0m
+   Any themes installed will be removed, and the changer reverted.
+   
+   [0;33m----------------------------------------------------------
+   
+   Please press enter to install the extra themes.
+   
+   ----------------------------------------------------------[0m
+      
+   Or close this terminal window to quit the install." ;
+   if : >/dev/tcp/8.8.8.8/53; then
+echo ""
+cd /tmp || exit &&
+wget https://raw.githubusercontent.com/sleekmason/packages/master/extra-themes_12.0-1_all.deb --show-progress -q
+sudo apt install -y ./extra-themes_12.0-1_all.deb
+echo ""
+echo "[0;33m----------------------------------------------------------------------"
+echo ""
+echo "All Finished!.
+Look for 'Auto Themes' in the tint2 paw icon to change themes."
+echo "" 
+echo "----------------------------------------------------------------------[0m"
+else
+echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+ echo ""
+ echo "   [0;33mNo Internet connection. Please connect and try again.[0m"
+ echo ""
+ echo "   [0;31m-----------------------------------------------------[0m"
+echo ""
+fi
+read -n1 -p " Press any key to quit this dialog ... "

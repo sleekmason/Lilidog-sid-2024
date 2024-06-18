@@ -1,0 +1,22 @@
+
+                 WELCOME TO LILIDOG!
+                        
+    Welcome to the Lilidog Linux amd64 full build
+    version, providing all the programs necessary 
+    for fast, efficient, and productive use.
+     
+    Please visit our forum for more information:
+    https://www.forum.lilidog.org/
+    
+    For initial settings see the 'landscape' icon
+    located in the Tint2 panel. Font size, themes
+    wallpapers, and other options are available.
+
+    To install Lilidog, click on the green button 
+    in the tray. Or try Menu --> All Programs -->
+    System --> Install Lilidog. The passwords are  
+    'user' for username, and 'live' for root.
+    
+    The debian installer is also an option should
+    you prefer. Reboot to access the menu.
+    

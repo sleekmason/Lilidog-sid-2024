@@ -1,0 +1,3 @@
+Games Pack,       x-terminal-emulator -T 'Games Installer' -e bash -c "games-installer",                     applications-games
+Nexuiz,           x-terminal-emulator -T 'Nexuiz Installer' -e bash -c "nexuiz-installer",                   applications-games
+Steam,            x-terminal-emulator -T 'Steam Installer' -e bash -c "steam-installer",                     applications-games

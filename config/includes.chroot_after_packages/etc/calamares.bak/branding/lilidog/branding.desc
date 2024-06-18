@@ -1,0 +1,37 @@
+---
+componentName:   lilidog
+welcomeStyleCalamares: false
+welcomeExpandingLogo: true
+windowExpanding: normal
+windowSize: 800px,520px
+windowPlacement: center
+
+strings:
+    productName:         Lilidog GNU/Linux
+    shortProductName:    Lilidog
+    version:             12 (bookworm)
+    shortVersion:        12
+    versionedName:       Lilidog 12 (bookworm)
+    shortVersionedName:  Lilidog 12
+    bootloaderEntryName: Lilidog 12
+    productUrl:          https://lilidog.org
+    supportUrl:          https://www.forum.lilidog.org/
+    knownIssuesUrl:      https://www.forum.lilidog.org/
+    releaseNotesUrl:     https://www.forum.lilidog.org/d/14-new-lilidog-releases
+    donateUrl:           https://www.forum.lilidog.org/
+
+images:
+    productLogo:         "lilidog-logo-ozark.png"
+    productIcon:         "lilidog-logo-ozark.png"
+    productWelcome:      "welcome.png"
+    productWallpaper:    "Gray.png"
+
+slideshow:               "show.qml"
+
+style:
+   sidebarBackground:    "#2E343B"
+   sidebarText:          "#DAE1E3"
+   sidebarTextSelect:    "#FFFFFF"
+   sidebarTextHighlight: "#346178"
+
+slideshowAPI: 2

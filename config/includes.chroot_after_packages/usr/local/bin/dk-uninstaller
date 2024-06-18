@@ -1,0 +1,18 @@
+#!/bin/bash
+echo ""
+echo "This script will not remove ~.config/dk or ~.config/polybar."
+echo "Please remove these configuration files manually if desired."
+echo ""
+echo "Preparing to remove dkwm . . ."
+sleep 1
+echo ""
+echo ""
+sudo apt remove -y dk &&
+echo ""
+echo ""
+sed -i '/Sxhkd Keys DK,      show-keybinds-dk,                    \/usr\/share\/icons\/ld-icons\/dk.png/d' ~/.config/jgmenu/prepend.csv
+killall -q jgmenu
+echo ""
+echo "Finished!"
+echo ""
+read -n1 -p " Press any key to quit this dialog ... "
