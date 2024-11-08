@@ -2,7 +2,7 @@ Batsignal,        x-terminal-emulator -T 'Batsignal Installer' -e bash -c "batsi
 Bluetooth,        x-terminal-emulator -T 'Bluetooth Installer' -e bash -c "bluetooth-installer",                              applications-utilities
 Brightness Tray Icon,  x-terminal-emulator -T 'Brightness And Gamma Tray Icon Installer' -e bash -c "bright-gamma-installer", applications-utilities
 # Etcher USB Maker, x-terminal-emulator -T 'Etcher Installer' -e bash -c "etcher-installer",                                    applications-utilities
-Gnome Boxes,      x-terminal-emulator -T 'Gnome Boxes Installer' -e bash -c "gnome-boxes-installer",                          applications-utilities
+# Gnome Boxes,      x-terminal-emulator -T 'Gnome Boxes Installer' -e bash -c "gnome-boxes-installer",                          applications-utilities
 Hblock,           x-terminal-emulator -T 'Hblock Installer' -e bash -c "hblock-installer",                                    applications-utilities
 KDEconnect,       x-terminal-emulator -T 'KDEconnect Installer' -e bash -c "kdeconnect-installer",                            applications-utilities
 LD Update Checker, x-terminal-emulator -T 'LD apt update checker installer' -e bash -c "ld-apt-update-installer",             applications-utilities
