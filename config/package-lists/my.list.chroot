@@ -41,6 +41,7 @@ exfat-fuse
 exfatprogs
 extlinux
 f2fs-tools
+fastfetch
 feh
 file
 file-roller
@@ -58,6 +59,7 @@ fortune-mod
 fuse3
 galculator
 galternatives
+gammy
 #gconf-gsettings-backend
 geany
 gettext-base

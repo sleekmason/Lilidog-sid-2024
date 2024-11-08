@@ -23,9 +23,9 @@ Root Folders,^checkout(rootfiles),folder
 Libreoffice,        libreoffice,                       libreoffice-writer
 Geany,              geany,	                       geany
 Pragha,             pragha,                            pragha
+Gpicview,           gpicview,                          gpicview
 Smplayer,           smplayer,                          smplayer
 Newsboat,           x-terminal-emulator -e newsboat,   accessories-text-editor
-Gpicview,           gpicview,                          gpicview
 Development,^checkout(development),applications-development
 
 ^tag(development)
@@ -39,10 +39,12 @@ Screenshot,         xfce4-screenshooter,              org.xfce.screenshooter
 Htop,               x-terminal-emulator -T 'Htop' -e htop,                    htop
 lxtask,             lxtask,                           applications-engineering
 Inxi Info,          x-terminal-emulator -T 'Inxi Info' -e bash -c "inxi -Fxrzm; echo $'\n\nPress any key to close'; read -srn1",   document-properties
+Fastfetch,          x-terminal-emulator -T 'Fastfetch' -e bash -c "fastfetch; bash",  utilities-system-monitor
 Hard Info,          hardinfo,                         drive-multidisk
 HW-Probe,           x-terminal-emulator -T 'Hw-Probe' -e bash -c "hw-probe-installer; echo $'\n\nPress any key to close.'; read -srn1",  applications-system
+Font Viewer,        yad --font,                       preferences-desktop-font
 Transmission,       transmission-gtk,                     transmission
-Color Chooser,      yad --color,                      applications-graphics
+Color Chooser,      yad --color --gtk-palette --palette=/usr/share/X11/rgb.txt,                     org.xfce.settings.color
 Kernel Remover,     x-terminal-emulator -T 'Kernel Remover' -e 'sudo kernel-remover -G dialog',     applications-accessories
 Check Firmware,     x-terminal-emulator -T 'Firmware Checker' -e bash -c "firmware-checker; echo $'\n\nPress any key to close.'; read -srn1",  applications-system
 Wallpaper Maker,    wallpaper-maker,                  applications-graphics
@@ -69,7 +71,6 @@ Tint2 Options,       tint2-options,                                 preferences-
 Mouse Finder,        toggle-mouse-pointer,                          preferences-desktop-personal
 Transparency,        transparency-system,                           preferences-desktop-personal
 Tint2 Toggle,        toggle.tint2,                                  preferences-desktop-personal
-Auto Login,          lightdm-autologin,                             preferences-desktop-personal
 Clipboard,           toggle.parcellite,                             preferences-desktop-personal
 OSprober,            osprober-toggle,                               preferences-desktop-personal
 Sounds,              notification-sounds,                           preferences-desktop-personal
@@ -95,20 +96,18 @@ Grub Backgrounds,         thunar ~/Pictures/grub-bg,                     folder-
 
 ^tag(configuration)
 Openbox,             obconf,                                                               obconf
-Wallpapers,          feh-set-wallpaper,                                                    preferences-desktop-display
-Quick Themes,        ld-theme-changer,                                                     applications-graphics
+Quick Themes,        ld-theme-changer,                                                     preferences-desktop-theme
 System Settings,     xfce4-settings-manager,                                               org.xfce.settings.manager
-Custom Toggles,      geany ~/.config/lilidog-themes/Light-Dark ~/.config/lilidog-themes/Custom,  document-properties
 Power Manager,       xfce4-power-manager-settings,                                         org.xfce.powermanager
+Ld-Hotcorners,       geany ~/.config/ld-hotcorners/ld-hotcornersrc,                        applications-engineering
 Tint2 Settings,      tint2conf,                                                            tint2conf
 Keybinds,            geany ~/.config/openbox/sxhkdrc-open,                                 document-properties
-Lightdm,             gksudo lightdm-gtk-greeter-settings,                                  lightdm-gtk-greeter-settings
+Lightdm,             lightdm-options,                                                      lightdm-gtk-greeter-settings
 Jgmenu,              geany ~/.config/jgmenu/README & thunar ~/.config/jgmenu,              document-properties
 Conky,               thunar ~/.config/conky,                                               document-properties
 Urxvt,               geany ~/.Xresources,                                                  utilities-terminal
 Picom,               geany ~/.config/picom.conf,                                           document-properties
-Dmenu F3,            geany ~/.config/dmenu/apps,                                           document-properties
-Ld-Hotcorners,       geany ~/.config/ld-hotcorners/ld-hotcornersrc,                        applications-engineering
+Wallpapers,          feh-set-wallpaper,                                                    preferences-desktop-display
 Grub Background,     x-terminal-emulator -T 'Grub Background Changer' -e bash -c "grub-bg-changer; echo $'\n\nPress any key to close.'; read -srn1",  preferences-desktop-wallpaper
 Plymouth Background, x-terminal-emulator -T 'Plymouth Background Changer' -e bash -c "plymouth-changer; echo $'\n\nPress any key to close.'; read -srn1",  preferences-desktop-wallpaper
 
