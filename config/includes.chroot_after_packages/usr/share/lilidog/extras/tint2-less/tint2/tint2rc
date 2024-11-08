@@ -207,7 +207,7 @@ ac_disconnected_cmd =
 #-------------------------------------
 # Button 1
 button = new
-button_icon = /usr/share/icons/ld-icons/coltint2light/menu.svg
+button_icon = /usr/share/icons/ld-icons/coltint2forge/menu.svg
 button_text = 
 button_tooltip = Left ▸ Rofi Menu ┃ Right ▸ Jgmenu
 button_lclick_command = ~/.config/rofi/scripts/rofi-familiar
@@ -224,7 +224,7 @@ button_max_icon_size = 18
 #-------------------------------------
 # Button 2
 button = new
-button_icon = /usr/share/icons/ld-icons/coltint2light/down.svg
+button_icon = /usr/share/icons/ld-icons/coltint2forge/down.svg
 button_text = 
 button_tooltip = Minimize
 button_lclick_command = xdotool key super+d
@@ -241,7 +241,7 @@ button_max_icon_size = 18
 #-------------------------------------
 # Button 3
 button = new
-button_icon = /usr/share/icons/ld-icons/coltint2light/theme-options.svg
+button_icon = /usr/share/icons/ld-icons/coltint2forge/theme-options.svg
 button_text = 
 button_tooltip = Quick Theme Settings
 button_lclick_command = popup -f /usr/share/lilidog/tint2/theme-options &
@@ -258,7 +258,7 @@ button_max_icon_size = 18
 #-------------------------------------
 # Button 4
 button = new
-button_icon = /usr/share/icons/ld-icons/coltint2light/exit.svg
+button_icon = /usr/share/icons/ld-icons/coltint2forge/exit.svg
 button_text = 
 button_tooltip = Exit
 button_lclick_command = ld-logout

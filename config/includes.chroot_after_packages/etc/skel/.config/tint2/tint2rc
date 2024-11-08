@@ -207,7 +207,7 @@ ac_disconnected_cmd =
 #-------------------------------------
 # Button 1
 button = new
-button_icon = /usr/share/icons/ld-icons/coltint2light/menu.svg
+button_icon = /usr/share/icons/ld-icons/coltint2forge/menu.svg
 button_text = 
 button_tooltip = Left ▸ Rofi Menu ┃ Right ▸ Jgmenu
 button_lclick_command = ~/.config/rofi/scripts/rofi-familiar
@@ -224,7 +224,7 @@ button_max_icon_size = 18
 #-------------------------------------
 # Button 2
 button = new
-button_icon = /usr/share/icons/ld-icons/coltint2light/hotcorners.svg
+button_icon = /usr/share/icons/ld-icons/coltint2forge/hotcorners.svg
 button_text = 
 button_tooltip = Hotcorners Toggle
 button_lclick_command = toggle.ld
@@ -241,7 +241,7 @@ button_max_icon_size = 18
 #-------------------------------------
 # Button 3
 button = new
-button_icon = /usr/share/icons/ld-icons/coltint2light/down.svg
+button_icon = /usr/share/icons/ld-icons/coltint2forge/down.svg
 button_text = 
 button_tooltip = Minimize
 button_lclick_command = xdotool key super+d
@@ -258,7 +258,7 @@ button_max_icon_size = 18
 #-------------------------------------
 # Button 4
 button = new
-button_icon = /usr/share/icons/ld-icons/coltint2light/light-dark.svg
+button_icon = /usr/share/icons/ld-icons/coltint2forge/light-dark.svg
 button_text = 
 button_tooltip = Left ▸ Light-Dark Toggle ┃ Middle ▸ Custom Theme
 button_lclick_command = light-dark-toggle &
@@ -275,7 +275,7 @@ button_max_icon_size = 18
 #-------------------------------------
 # Button 5
 button = new
-button_icon = /usr/share/icons/ld-icons/coltint2light/theme-options.svg
+button_icon = /usr/share/icons/ld-icons/coltint2forge/theme-options.svg
 button_text = 
 button_tooltip = Quick Theme Settings
 button_lclick_command = popup -f /usr/share/lilidog/tint2/theme-options &
@@ -292,7 +292,7 @@ button_max_icon_size = 18
 #-------------------------------------
 # Button 6
 button = new
-button_icon = /usr/share/icons/ld-icons/coltint2light/recents.svg
+button_icon = /usr/share/icons/ld-icons/coltint2forge/recents.svg
 button_text = 
 button_tooltip = Left ▸ Places Menu ┃ Right ▸ Recents Menu
 button_lclick_command = popup -o places-pipemenu &
@@ -309,7 +309,7 @@ button_max_icon_size = 18
 #-------------------------------------
 # Button 7
 button = new
-button_icon = /usr/share/icons/ld-icons/coltint2light/t2.svg
+button_icon = /usr/share/icons/ld-icons/coltint2forge/t2.svg
 button_text = 
 button_tooltip = Left ▸ Tint2 Options ┃ Middle ▸ Tint2 Configuration
 button_lclick_command = popup -f /usr/share/lilidog/tint2/options &
@@ -326,7 +326,7 @@ button_max_icon_size = 18
 #-------------------------------------
 # Button 8
 button = new
-button_icon = /usr/share/icons/ld-icons/coltint2light/upgrade.svg
+button_icon = /usr/share/icons/ld-icons/coltint2forge/upgrade.svg
 button_text = 
 button_tooltip = System Upgrade Options
 button_lclick_command = popup -f /usr/share/lilidog/tint2/update-options &
@@ -343,7 +343,7 @@ button_max_icon_size = 18
 #-------------------------------------
 # Button 9
 button = new
-button_icon = /usr/share/icons/ld-icons/coltint2light/exit.svg
+button_icon = /usr/share/icons/ld-icons/coltint2forge/exit.svg
 button_text = 
 button_tooltip = Exit
 button_lclick_command = ld-logout

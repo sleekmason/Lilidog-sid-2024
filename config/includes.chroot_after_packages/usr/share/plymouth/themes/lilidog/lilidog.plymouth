@@ -1,8 +1,8 @@
 [Plymouth Theme]
 Name=Default theme for Lilidog
-Description=An easy going theme for Lilidog
+Description=An easy going theme for Lilidog based on homeworld
 ModuleName=script
 
 [script]
-ImageDir=/usr/share/plymouth/themes/Lilidog
+ImageDir=/usr/share/plymouth/themes/lilidog
 ScriptFile=/usr/share/plymouth/themes/lilidog/lilidog.script

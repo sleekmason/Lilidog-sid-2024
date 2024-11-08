@@ -2,7 +2,7 @@
 #
 #  Copyright (C) 2009 Canonical Ltd.
 #  Copyright © 2010-2021 Aurélien Couderc <coucouf@debian.org>
-#  Copyright © 2014-2022 Juliette Taka <juliette.belin@logilab.fr>
+#  Copyright © 2014-2021 Juliette Taka <juliette.belin@logilab.fr>
 #
 #  This program is free software; you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
@@ -27,14 +27,15 @@
 
 
 #------------------------------- Constants -----------------------------------------
-NB_ANIM_STEPS = 60;
-NB_REFRESHS_BETWEEN_ANIMS = 2;
+NB_ROTATION_STEPS = 70;
+NB_REFRESHS_BETWEEN_ANIMS = 3;
 
 # Initial position of the center of the logo in % of background
+DEBIAN_POS_PCT.y = 0.68; # Debian image position in % of screen height
+DEBIAN_HEIGHT_PCT = 0.07; # Debian image height in % of smallest screen dimension
 LOGO_CENTER_PCT.x = 0.5; # Debian swirl image position in % of screen height & width
-LOGO_CENTER_PCT.y = 0.55;
-LOGO_SIZE_PCT = 0.48; # Debian + lilidog image size in % of smallest screen dimension
-LOGO_GLOW_SIZE_PCT = 0.8; # Debian swirl image size in % of smallest screen dimension
+LOGO_CENTER_PCT.y = 0.5;
+LOGO_SIZE_PCT = 0.18; # Debian swirl image size in % of smallest screen dimension
 
 #------------------------------- Globals -------------------------------------------
 # are we currently prompting for a password?
@@ -114,13 +115,11 @@ fun TextYOffset() {
     local.min_height;
 
     # Put the 1st line below the logo + some spacing
-    # TODO position from lower edge
-    y = logo_sprite.GetY() + logo.GetHeight();
+    y = debian_sprite.GetY() + debian.GetHeight();
     #Debug("y = " + y);
 
     text_height = first_line_height * 7.5;
-    # subtract Window.GetY() to show info also at smallest of dual srceens
-    min_height = window_max.height - 2 * first_line_height - Window.GetY();
+    min_height = window_max.height;
     #Debug("text_height=" + text_height + "; min_height=" + min_height);
 
     if (y + text_height > min_height)
@@ -132,46 +131,62 @@ fun TextYOffset() {
 
 #----------------------------- Screen/window setup ---------------------------
 # Compute screen/image ratio and scale the background accordingly
-window_max.width = Window.GetWidth();
-window_max.height = Window.GetHeight();
+window_max.width = Window.GetX() * 2 + Window.GetWidth();
+window_max.height = Window.GetY() * 2 + Window.GetHeight();
 screen_ratio = window_max.width / window_max.height;
 small_dimension = Math.Min(window_max.width, window_max.height);
 #Debug("Window.GetX():" + Window.GetX() + ", Window.GetY():" + Window.GetY());
 #Debug("Window is [" + window_max.width + ";" + window_max.height + "], ratio=" + screen_ratio);
 
+debian_height = small_dimension * DEBIAN_HEIGHT_PCT;
+debian_pos.y = window_max.height * DEBIAN_POS_PCT.y - debian_height/2;
 logo_size = small_dimension * LOGO_SIZE_PCT;
 logo_center.x = window_max.width * LOGO_CENTER_PCT.x;
 logo_center.y = window_max.height * LOGO_CENTER_PCT.y;
 #Debug("Logo center at [" + logo_center.x + ";" + logo_center.y + "], size=" + logo_size + "px");
 
-logo_pos.x = logo_center.x - 0.343 * logo_size; # Center the Debian 12 text, not the image
+logo_pos.x = logo_center.x - logo_size/2;
 logo_pos.y = logo_center.y - logo_size/2;
 
-logo_glow_size = small_dimension * LOGO_GLOW_SIZE_PCT;
+#------------------------------- Background ----------------------------------------
+bg_image = Image("lilidog.jpg");
+scaled_bg_image = bg_image.Scale(window_max.width, window_max.height);
 
+# Display background
+bg_sprite = Sprite(scaled_bg_image);
+bg_sprite.SetPosition(Window.GetX() + Window.GetWidth() / 2 - scaled_bg_image.GetWidth() / 2,
+                      Window.GetY() + Window.GetHeight() / 2 - scaled_bg_image.GetHeight() / 2,
+                      -1000);
 
-#---------------------------- Logo + lilidog ---------------------------------
+#------------------------------- Debian ----------------------------------------------
+debian = Image("debian.png");
+# Target same height as logo
+debian_scale_factor = debian_height / debian.GetHeight();
+debian = debian.Scale(debian.GetWidth()  * debian_scale_factor,
+                      debian.GetHeight() * debian_scale_factor);
+debian_sprite = Sprite(debian);
+debian_sprite.SetPosition(window_max.width / 2 - debian.GetWidth() / 2,
+                          debian_pos.y,
+                          -90);
+
+#------------------------------- Logo ----------------------------------------------
 logo = Image("logo.png");
 logo_scale_factor = logo_size / logo.GetWidth();
 logo = logo.Scale(logo.GetWidth()  * logo_scale_factor,
                   logo.GetHeight() * logo_scale_factor);
 logo_to_top_edge = Window.GetHeight() * 0.3;
 logo_sprite = Sprite(logo);
-logo_sprite.SetPosition(logo_pos.x, logo_pos.y, -1);
-#logo_sprite.SetOpacity(0);
+logo_sprite.SetPosition(logo_pos.x, logo_pos.y, -50);
 
-logo_glow = Image("glow.png");
-logo_glow_scale_factor = logo_glow_size / logo_glow.GetWidth();
-logo_glow = logo_glow.Scale(logo_glow.GetWidth()  * logo_glow_scale_factor,
+
+logo_glow = Image("logo_circle.png");
+logo_glow_scale_factor = logo_size / logo_glow.GetWidth();
+logo_glow[0] = logo_glow.Scale(logo_glow.GetWidth()  * logo_glow_scale_factor,
                                logo_glow.GetHeight() * logo_glow_scale_factor);
-
-logo_glow_pos.x = logo_center.x - logo_glow.GetWidth() / 2;
-# Place glow vertically between the Debian 12 text and the lilidog
-logo_glow_pos.y = logo_pos.y + logo.GetHeight()*0.1 - logo_glow.GetHeight() / 2;
-
 logo_glow_sprite = Sprite();
-logo_glow_sprite.SetPosition(logo_glow_pos.x, logo_glow_pos.y, -2);
-logo_glow_sprite.SetImage(logo_glow);
+logo_glow_sprite.SetPosition(logo_pos.x, logo_pos.y, -60);
+logo_glow_sprite.SetImage(logo_glow[0]);
+
 
 
 #------------------------------String functions-------------------------------
@@ -233,12 +248,12 @@ fun StringToInteger (str) {
 
 #-----------------------------------------------------------------------------
 # Top background colour
-# #05475c --> 0.0196, 0.2784, 0.3608
+# #010027 --> 0.004, 0.0, 0.153
 # Bottom background colour
-# #05475c --> 0.0196, 0.2784, 0.3608
+# #010027 --> 0.004, 0.0, 0.153
 #
-Window.SetBackgroundTopColor (0.02, 0.279, 0.3608);     # Nice colour on top of the screen fading to
-Window.SetBackgroundBottomColor (0.02, 0.279, 0.3608);  # an equally nice colour on the bottom
+Window.SetBackgroundTopColor (0.004, 0.0, 0.153);     # Nice colour on top of the screen fading to
+Window.SetBackgroundBottomColor (0.004, 0.0, 0.153);  # an equally nice colour on the bottom
 
 bits_per_pixel = Window.GetBitsPerPixel ();
 # TODO need to handle 16 colors ?
@@ -969,12 +984,6 @@ fun rotate_img(source_img, current_step, nb_steps) {
 }
 
 fun update_glow_anim () {
-    if (global.anim_iter > NB_ANIM_STEPS) {
-        global.anim_iter = 0;
-    }
-    #DebugMedium("iter = " + global.anim_iter);
-    glow_opacity = 0.7 + 0.3 * Math.Cos(global.anim_iter / NB_ANIM_STEPS * 2 * Math.Pi);
-    #Debug("glow_opacity = " + glow_opacity);
     if (global.anim_start_time != global.progress_time && global.anim_status != "running") {
         global.anim_start_time = global.progress_time;
         global.anim_iter = 0;
@@ -982,17 +991,17 @@ fun update_glow_anim () {
     }
 
     if (global.anim_status == "running") {
-#        iter_img = global.logo_glow[global.anim_iter];
-#        if (iter_img == NULL) {
-#            # Generate rotated image for the glow around the logo on demand.
-#            #DebugMedium("Generating rotated image for index " + global.anim_iter);
-#            #iter_img = rotate_img(logo_glow[0], global.anim_iter, NB_ANIM_STEPS);
-#            global.logo_glow[global.anim_iter] = iter_img;
-#        }
-        global.logo_glow_sprite.SetOpacity(glow_opacity);
+        iter_img = global.logo_glow[global.anim_iter];
+        if (iter_img == NULL) {
+            # Generate rotated image for the glow around the logo on demand.
+            #DebugMedium("Generating rotated image for index " + global.anim_iter);
+            iter_img = rotate_img(logo_glow[0], global.anim_iter, NB_ROTATION_STEPS);
+            global.logo_glow[global.anim_iter] = iter_img;
+        }
+        global.logo_glow_sprite.SetImage(iter_img);
         global.anim_iter++;
 
-        if (global.anim_iter >= NB_ANIM_STEPS) {
+        if (global.anim_iter >= NB_ROTATION_STEPS) {
             global.anim_status = "stopped";
         }
     }
