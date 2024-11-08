@@ -9,11 +9,11 @@ windowPlacement: center
 strings:
     productName:         Lilidog GNU/Linux
     shortProductName:    Lilidog
-    version:             13
-    shortVersion:        13
-    versionedName:       Lilidog 13
-    shortVersionedName:  Lilidog 13
-    bootloaderEntryName: Lilidog 13
+    version:             sid
+    shortVersion:        sid
+    versionedName:       Lilidog sid
+    shortVersionedName:  Lilidog sid
+    bootloaderEntryName: Lilidog sid
     productUrl:          https://lilidog.org
     supportUrl:          https://www.forum.lilidog.org/
     knownIssuesUrl:      https://www.forum.lilidog.org/
