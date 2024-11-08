@@ -20,7 +20,7 @@ read -p "   [0;33mGnome Boxes Installer[0m
    Or close this terminal window to quit the install." ;
    if : >/dev/tcp/8.8.8.8/53; then
 echo "" 
-sudo apt update && sudo apt install --install-recommends gnome-boxes dnsmasq &&
+sudo apt update && sudo apt install gnome-boxes dnsmasq &&
 sed -i '/Gnome Boxes,         gnome-boxes,       gnome-boxes/d' ~/.config/jgmenu/prepend.csv &&
 sed -i '/Root Folders,^checkout(rootfiles),folder/a Gnome Boxes,         gnome-boxes,       gnome-boxes' ~/.config/jgmenu/prepend.csv
 killall -q jgmenu
