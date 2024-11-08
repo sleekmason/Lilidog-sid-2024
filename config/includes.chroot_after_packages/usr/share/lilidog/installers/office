@@ -6,7 +6,7 @@ Nano Editor,             x-terminal-emulator -T 'Nano Editor Installer' -e bash 
 Neovim Editor,           x-terminal-emulator -T 'Neovim Editor Installer' -e bash -c "neovim-installer",                     applications-office
 Pluma Editor,            x-terminal-emulator -T 'Pluma Editor Installer' -e bash -c "pluma-installer",                       applications-office
 VSCodium Editor,         x-terminal-emulator -T 'VSCodium Installer' -e bash -c "vscodium-installer",                        applications-office
-Xed Editor,              x-terminal-emulator -T 'Xed Editor Installer' -e bash -c "xed-installer",                           applications-office
+# Xed Editor,              x-terminal-emulator -T 'Xed Editor Installer' -e bash -c "xed-installer",                           applications-office
 ^sep()
 Libreoffice Calc,        x-terminal-emulator -T 'Libreoffice Calc Installer' -e bash -c "libreoffice-calc-installer",        applications-office
 Libreoffice Draw,        x-terminal-emulator -T 'Libreoffice Draw Installer' -e bash -c "libreoffice-draw-installer",        applications-office

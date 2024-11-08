@@ -1,6 +1,6 @@
 Awesomewm,        x-terminal-emulator -T 'Awesome WM Installer' -e bash -c "awesome-installer",                   applications-utilities
 Awesome Conky,    x-terminal-emulator -T 'Conky For Awesome Installer' -e bash -c "awesome-conky-installer",      applications-utilities
-Backports,        x-terminal-emulator -T 'Backports Installer' -e bash -c "backports-installer",                  applications-utilities
+# Backports,        x-terminal-emulator -T 'Backports Installer' -e bash -c "backports-installer",                  applications-utilities
 Conky,            x-terminal-emulator -T 'Default Conky Installer' -e bash -c "conky-default-installer",          applications-utilities
 dkwm,             x-terminal-emulator -T 'dk Installer' -e bash -c "dk-installer",                                applications-utilities
 dwm,              x-terminal-emulator -T 'dwm Installer' -e bash -c "dwm-installer",                              applications-utilities
@@ -12,7 +12,7 @@ Lemonbar Panel,   x-terminal-emulator -T 'Lemonbar Installer' -e bash -c "lemonb
 Lightdm Default,  x-terminal-emulator -T 'Lightdm Installer' -e bash -c "lightdm-installer",                      applications-utilities
 Lightdm Slick,    x-terminal-emulator -T 'Lightdm Slick Greeter Installer' -e bash -c "slick-greeter-installer",  applications-utilities
 Live-build Apps,  x-terminal-emulator -T 'Live-build Apps Installer' -e bash -c "live-build-apps-installer",      applications-utilities
-Mirror Changer,   x-terminal-emulator -T 'Debian Mirrors Changer' -e bash -c "sourcechanger",                     applications-utilities
+# Mirror Changer,   x-terminal-emulator -T 'Debian Mirrors Changer' -e bash -c "sourcechanger",                     applications-utilities
 Polybar Panel,    x-terminal-emulator -T 'Polybar Installer' -e bash -c "polybar-installer",                      applications-utilities
 Sowm,             x-terminal-emulator -T 'Sowm Installer' -e bash -c "sowm-installer",                            applications-utilities
 Sowm w/ Borders,  x-terminal-emulator -T 'Sowm With Borders Installer' -e bash -c "sowm-borders-installer",       applications-utilities

@@ -39,6 +39,7 @@ notify-send "Joplin is already installed" && exit
 else
 echo "" 
 echo ""
+sudo apt update && sudo apt install libfuse2t64
 sudo wget --prefer-family=IPv4 -O - https://raw.githubusercontent.com/laurent22/joplin/dev/Joplin_install_and_update.sh | bash &&
 echo ""
 sed -i '/^Joplin\b/d' ~/.config/jgmenu/prepend.csv &&

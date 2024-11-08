@@ -1,6 +1,6 @@
 # Distribution defaults. Changes to this file will get overwritten during
 # upgrades.
 [Daemon]
-Theme=slate
+Theme=lilidog
 ShowDelay=0
-DeviceTimeout=4
+DeviceTimeout=6

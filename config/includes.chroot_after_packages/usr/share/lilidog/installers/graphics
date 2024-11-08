@@ -1,5 +1,5 @@
 Blender,            x-terminal-emulator -T 'Blender Installer' -e bash -c "blender-installer",                 applications-graphics
-GIMP,               x-terminal-emulator -T 'GIMP Installer' -e bash -c "gimp-installer",                       applications-graphics
+# GIMP,               x-terminal-emulator -T 'GIMP Installer' -e bash -c "gimp-installer",                       applications-graphics
 Gpicview,           x-terminal-emulator -T 'Gpicview Installer' -e bash -c "gpicview-installer",               applications-graphics
 Inkscape,           x-terminal-emulator -T 'Inkscape Installer' -e bash -c "inkscape-installer",               applications-graphics
 Tuxpaint,           x-terminal-emulator -T 'Tuxpaint Installer' -e bash -c "tuxpaint-installer",               applications-graphics

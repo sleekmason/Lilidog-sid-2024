@@ -179,7 +179,7 @@ while true; do
     echo
     echo "   ${blue}Select from the available options below:"${reset}
     echo
-    echo "    ${green}1. Find the fastest debian mirror using netselect-apt?"${reset}
+#    echo "    ${green}1. Find the fastest debian mirror using netselect-apt?"${reset}
     echo "    ${green}2. Check apt repositories for package updates?"${reset}
     echo "    ${green}3. Install available package upgrades?"${reset}
     echo "    ${green}4. Autoremove any unneeded leftover packages?"${reset}

@@ -27,7 +27,7 @@ read -p "   [0;32mMaestral Installer[0m
    if : >/dev/tcp/8.8.8.8/53; then
 echo ""
 # Make sure dependencies are installed - quietly
-sudo apt update && sudo apt install -y python3.11-venv desktop-file-utils shared-mime-info firefox-esr &&
+sudo apt update && sudo apt install -y python3-venv desktop-file-utils shared-mime-info firefox-esr &&
 sudo update-desktop-database &&
 python3 -m venv maestral-venv &&
 source maestral-venv/bin/activate &&

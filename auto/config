@@ -16,10 +16,10 @@ lb config noauto \
      --firmware-chroot 'true' \
      --security 'false' \
      --memtest 'memtest86+' \
-     --image-name 'Lilidog-full-sid-24.06.12' \
-     --iso-application 'Lilidog-full-sid' \
-     --iso-publisher 'Lilidog-full-sid GNU/Linux' \
-     --iso-volume 'Lilidog-full-sid' \
+     --image-name 'Lilidog-sid-24.11.08' \
+     --iso-application 'Lilidog-sid' \
+     --iso-publisher 'Lilidog-sid GNU/Linux' \
+     --iso-volume 'Lilidog-sid' \
      --system 'live' \
      --updates 'false' \
      --win32-loader 'false' \
