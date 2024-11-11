@@ -6,7 +6,7 @@
 xfconf-query -c xsettings -p /Net/ThemeName -s "Cove"
 
 ## Change icon theme
-# xfconf-query -c xsettings -p /Net/IconThemeName -s "Obsidian-Red"
+xfconf-query -c xsettings -p /Net/IconThemeName -s "Obsidian-Red"
 
 ## Change openbox theme
 #sed -i "s/$(grep "<theme>" ~/.config/openbox/rc.xml -A 5 | grep "<name>"| awk -F"[><]" '{print $3}')/"Covebox"/g" ~/.config/openbox/rc.xml

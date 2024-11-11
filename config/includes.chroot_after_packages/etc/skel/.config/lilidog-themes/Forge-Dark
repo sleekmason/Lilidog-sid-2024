@@ -6,7 +6,7 @@
 xfconf-query -c xsettings -p /Net/ThemeName -s "Forge-Dark"
 
 ## Change icon theme
-# xfconf-query -c xsettings -p /Net/IconThemeName -s "Obsidian-Gray"
+xfconf-query -c xsettings -p /Net/IconThemeName -s "Obsidian-Gray"
 
 ## Change openbox theme
 #sed -i "s/$(grep "<theme>" ~/.config/openbox/rc.xml -A 5 | grep "<name>"| awk -F"[><]" '{print $3}')/"Forge-Darkbox"/g" ~/.config/openbox/rc.xml

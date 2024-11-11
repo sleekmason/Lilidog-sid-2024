@@ -12,7 +12,7 @@ sudo sed -i "s/font-name.*/font-name = Noto Sans 11/g" /etc/lightdm/lightdm-gtk-
 
 ## System gtktheme, icon theme
 xfconf-query -c xsettings -p /Net/ThemeName -s "Fane"
-# xfconf-query -c xsettings -p /Net/IconThemeName -s "Obsidian-Teal"
+xfconf-query -c xsettings -p /Net/IconThemeName -s "Obsidian-Teal"
 
 ## Picom transparency
 if ! pgrep -x picom > /dev/null 2>&1; then
