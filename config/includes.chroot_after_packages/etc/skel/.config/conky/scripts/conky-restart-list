@@ -1,5 +1,2 @@
 #!/bin/bash
-conky -c /home/sleekmason/.config/conky/conky-build.conf
-conky -c /home/sleekmason/.config/conky/conky-shortcuts.conf
-conky -c /home/sleekmason/.config/conky/conky-world-clock.conf
-conky -c /home/sleekmason/.config/conky/conky-clock-date.conf
+conky -c ~/.config/conky/conky-shortcuts.conf &
