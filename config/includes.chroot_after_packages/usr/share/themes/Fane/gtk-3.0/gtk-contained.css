@@ -57,7 +57,7 @@
 .view text,
 iconview text,
 textview text {
-  color: #D3DFE6;
+  color: #CEDAE0;
   background-color: #1D2B33; }
   .view:backdrop, iconview:backdrop,
   .view text:backdrop,
@@ -438,7 +438,7 @@ button {
   border-left-color: shade(#172229, 0.76);
   border-bottom-color: shade(#172229, 0.74);
   background-image: linear-gradient(to bottom, shade(shade(#1D2D36, 1.03), 1.05), shade(shade(#1E3038, 1.03), 0.97));
-  box-shadow: inset 0 1px #28414D; }
+  box-shadow: inset 0 1px #273E4A; }
   notebook > header > tabs > arrow, button.sidebar-button, button.titlebutton,
   button.flat {
     border-color: transparent;
@@ -1455,7 +1455,7 @@ spinbutton:not(.vertical) {
     margin: 0;
     padding-bottom: 0;
     padding-top: 0;
-    color: #799DAD;
+    color: #879EA8;
     background-image: none;
     border-style: none none none solid;
     border-color: #6E8F9E;
@@ -2245,7 +2245,7 @@ menu,
     menu menuitem:hover,
     .menu menuitem:hover,
     .context-menu menuitem:hover {
-      color: #D7F5FA;
+      color: #E4F0F2;
       background-image: linear-gradient(to bottom, shade(#2a656d, 1.0), shade(#2a656d, 1.05));
       box-shadow: inset 1px 1px shade(#1D2B33, 0.8), inset -1px -1px shade(#1D2B33, 0.8); }
     menu menuitem:disabled,
@@ -2483,7 +2483,7 @@ notebook > header {
         border-color: transparent;
         background-color: transparent; }
     notebook > header tab:checked {
-      color: #D5E5ED;
+      color: #D5E0E6;
       background-color: shade(#22353D, 1.05);
       border-width: 1px 1px 0 1px; }
       notebook > header tab:checked:backdrop {
@@ -2492,7 +2492,7 @@ notebook > header {
         border-color: #18242B;
         background-color: #2a656d; }
     notebook > header tab:backdrop:checked {
-      color: #D5E5ED; }
+      color: #D5E0E6; }
       notebook > header tab:backdrop:checked.reorderable-page {
         border-color: #18242B;
         background-color: #22343D; }
@@ -3820,7 +3820,7 @@ filechooserbutton:drop(active) {
     .sidebar treeview iconview:selected,
     .sidebar treeview .view:selected:focus,
     .sidebar treeview iconview:selected:focus {
-      color: #EBF5FA; }
+      color: #E1EBF0; }
     .sidebar row:backdrop,
     .sidebar treeview:backdrop {
       background-color: transparent; }
