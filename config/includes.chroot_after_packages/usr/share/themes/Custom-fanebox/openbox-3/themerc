@@ -3,8 +3,8 @@
 
 !! Menu background
 menu.items.bg: flat gradient vertical
-menu.items.bg.color: #1D2B33
-menu.items.bg.colorTo: #1D2B33
+menu.items.bg.color: #1E2F38
+menu.items.bg.colorTo: #1E2F38
 menu.separator.color: #32545E
 
 !! Menu text
@@ -14,8 +14,8 @@ menu.items.disabled.text.color: #4C6E70
 
 !! Menu title
 menu.title.bg: raised splitvertical gradient
-menu.title.bg.color: #1D2B33
-menu.title.bg.colorTo: #1D2B33
+menu.title.bg.color: #1E2F38
+menu.title.bg.colorTo: #1E2F38
 menu.title.text.color: #85D3DB
 menu.title.text.justify: center
 
@@ -36,9 +36,9 @@ window.inactive.title.bg.colorTo: #1D2A33
 !! Titlebar text
 window.label.text.justify: center
 window.active.label.bg: parentrelative
-window.active.label.text.color: #CEDAE0
+window.active.label.text.color: #D3DCE0
 window.inactive.label.bg: parentrelative
-window.inactive.label.text.color: #7297A3
+window.inactive.label.text.color: #87A1AD
 
 !! Window buttons
 window.*.button.*.bg: parentrelative
@@ -60,10 +60,10 @@ window.inactive.button.*.pressed.bg.colorTo: #ffaa64
 window.inactive.button.*.pressed.image.color: #fdceb7
 window.inactive.button.*.pressed.bg.border.color: #545757
 
-window.active.button.*.image.color: #C7D4D9
-window.active.button.disabled.image.color: #436363
-window.inactive.button.*.image.color: #698B96
-window.inactive.button.disabled.image.color: #436363
+window.active.button.*.image.color: #CFD7DB
+window.active.button.disabled.image.color: #445761
+window.inactive.button.*.image.color: #839DA8
+window.inactive.button.disabled.image.color: #445761
 
 !! Borders
 window.active.border.color: #1E3C45
