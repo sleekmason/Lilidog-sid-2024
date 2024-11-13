@@ -69,7 +69,7 @@ xfce4-term-colors fane
 sed -i "s/FontName=.*/FontName=JetBrains Mono 11/g" ~/.config/xfce4/terminal/terminalrc
 
 ## Tint2 Panel Items - position, autoshrink, autohide, and transparency
-sed -i "s/^panel_position =.*/panel_position = bottom center horizontal/" "$HOME"/.config/tint2/tint2rc
+sed -i "s/^panel_position =.*/panel_position = top center horizontal/" "$HOME"/.config/tint2/tint2rc
 sed -i "s/^panel_shrink =.*/panel_shrink = 0/" "$HOME"/.config/tint2/tint2rc
 sed -i "s/^autohide =.*/autohide = 0/" "$HOME"/.config/tint2/tint2rc
 sed -i "0,/background_color =/{s/background_color =.*/background_color = #0d0f0f 60/}" "$HOME"/.config/tint2/tint2rc
