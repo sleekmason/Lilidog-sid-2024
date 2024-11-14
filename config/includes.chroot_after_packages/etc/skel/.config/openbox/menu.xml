@@ -173,7 +173,7 @@
 					<execute>x-terminal-emulator -T 'inxi -Fxrz' -e bash -c "inxi -Fxrz; echo $'\n\nPress any key to close'; read -srn1"</execute>
 				</action>
 			</item>
-			<item icon="/usr/share/pixmaps/transmission.xpm" label="Transmission">
+			<item icon="/usr/share/icons/gnome/24x24/categories/applications-multimedia.png" label="Transmission">
 				&gt;
 				<action name="Execute">
 					<execute>transmission-gtk</execute>
