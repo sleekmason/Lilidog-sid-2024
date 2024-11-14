@@ -24,7 +24,10 @@ fi
 jgmenu_run init --apply-obtheme
 
 ## Change xfce4-terminal theme
-xfce4-term-colors lilidog-bright
+#xfce4-term-colors lilidog-bright
+xfconf-query -c xfce4-terminal -p /color-background -s "#e6e6ebebebeb"
+xfconf-query -c xfce4-terminal -p /color-foreground -s "#141412121212"
+xfconf-query -c xfce4-terminal -p /color-palette -s "rgb(0,0,0);rgb(184,19,0);rgb(2,99,17);rgb(144,50,0);rgb(0,0,170);rgb(170,0,170);rgb(0,122,122);rgb(170,170,170);rgb(0,93,93);rgb(255,85,85);rgb(0,65,0);rgb(255,255,85);rgb(0,113,121);rgb(255,85,255);rgb(0,123,123);rgb(255,255,255)"
 
 ## Change Rofi theme
 sed -i 's/^@theme "familiar.*/@theme "familiar-bright.rasi"/g' "$HOME/.config/rofi/themes/familiar/config.rasi"
