@@ -149,7 +149,7 @@ logo_pos.x = logo_center.x - logo_size/2;
 logo_pos.y = logo_center.y - logo_size/2;
 
 #------------------------------- Background ----------------------------------------
-bg_image = Image("lilidog.jpg");
+bg_image = Image("lilidog.png");
 scaled_bg_image = bg_image.Scale(window_max.width, window_max.height);
 
 # Display background
