@@ -14,7 +14,8 @@
     "display": {
          "separator": " ▸  ",
          "color": {
-            "separator": "blue"
+            "separator": "blue",
+            "output": "blue" // default color
         }
     },
     "modules": [
@@ -27,7 +28,8 @@
         {
             "type": "title",
             "key": " Host",
-            "format": "{user-name} \u001b[0;34m@\u001b[0m {host-name}"
+            "format": "{user-name} @ {host-name}"
+        /*  "format": "{user-name} \u001b[0;34m@\u001b[0m {host-name}"  */
         },
         {
             "type": "host",
