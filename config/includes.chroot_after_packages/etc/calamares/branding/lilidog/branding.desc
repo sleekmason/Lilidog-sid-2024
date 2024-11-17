@@ -36,6 +36,6 @@ style:
    SidebarBackground:    "#1E2E36"
    SidebarText:          "#DAE4E8"
    SidebarTextCurrent:   "#FFFFFF"
-   SidebarBackgroundCurrent: "#2A656D"
+   SidebarBackgroundCurrent: "#236C76"
 
 slideshowAPI: 2
