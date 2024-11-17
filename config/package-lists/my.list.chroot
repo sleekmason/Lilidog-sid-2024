@@ -115,6 +115,8 @@ imagemagick
 intel-microcode
 inxi
 isc-dhcp-client
+isc-dhcp-common
+isc-dhcp-client-ddns
 iw
 jgmenu
 jq
@@ -303,11 +305,8 @@ xz-utils
 yad
 yt-dlp
 zstd
-#iso-codes
-#libpam-systemd
-## From isc-dhcp-client
-#isc-dhcp-common
-#isc-dhcp-client-ddns
-#resolveconf
-#systemd-resolved
-#avahi-autoipd
+iso-codes
+libpam-systemd
+systemd-resolved
+avahi-autoipd
+iproute2
