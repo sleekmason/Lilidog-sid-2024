@@ -26,7 +26,6 @@
   <style name="current-line"                background="#374F5E"/>
   <style name="current-line-number"         background="#374F5E"/>
   <style name="draw-spaces"                 foreground="#babdb6"/>
-  <style name="background-pattern"          background="#f3f3f3"/>
   <style name="line-numbers"                foreground="#A5B1B8" background="#203038"/>
   <style name="background-pattern"          background="#7D4A82"/>
   <!-- Bracket Matching -->
