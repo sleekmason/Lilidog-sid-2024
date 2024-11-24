@@ -1,28 +1,155 @@
 #!/bin/bash
 
+# xfce4-terminal theme changer utilizing xfconf-query to change syntax, 
+# background, and foreground colors.  By sleekmason 14 Nov 2024
+
+slate(){
+xfconf-query -c xfce4-terminal -p /color-background -s "#1c1c28272929"
+xfconf-query -c xfce4-terminal -p /color-foreground -s "#b1b1c4c4c4c4"
+xfconf-query -c xfce4-terminal -p /color-palette -s "rgb(0,0,0);rgb(196,62,47);rgb(0,136,87);rgb(190,149,45);rgb(56,152,183);rgb(150,52,128);rgb(0,142,142);rgb(158,170,176);rgb(153,163,172);rgb(255,95,95);rgb(71,207,133);rgb(226,215,115);rgb(110,195,215);rgb(239,115,219);rgb(99,208,200);rgb(224,231,233)"
+}
+arcadia(){
+xfconf-query -c xfce4-terminal -p /color-background -s "#21212b2b3636"
+xfconf-query -c xfce4-terminal -p /color-foreground -s "#b4b4d4d4e0e0"
+xfconf-query -c xfce4-terminal -p /color-palette -s "rgb(0,0,0);rgb(196,62,47);rgb(0,136,87);rgb(190,149,45);rgb(56,152,183);rgb(150,52,128);rgb(0,142,142);rgb(158,170,176);rgb(153,163,172);rgb(255,95,95);rgb(71,207,133);rgb(226,215,115);rgb(110,195,215);rgb(239,115,219);rgb(99,208,200);rgb(224,231,233)"	
+}
+nightshade(){
+xfconf-query -c xfce4-terminal -p /color-background -s "#1c1c21212929"
+xfconf-query -c xfce4-terminal -p /color-foreground -s "#bcbcdadae6e6"
+xfconf-query -c xfce4-terminal -p /color-palette -s "rgb(0,0,0);rgb(196,62,47);rgb(0,136,87);rgb(190,149,45);rgb(56,152,183);rgb(150,52,128);rgb(0,142,142);rgb(158,170,176);rgb(153,163,172);rgb(255,95,95);rgb(71,207,133);rgb(226,215,115);rgb(110,195,215);rgb(239,115,219);rgb(99,208,200);rgb(224,231,233)"	
+}
+fane(){
+xfconf-query -c xfce4-terminal -p /color-background -s "#1d1d2b2b3333"
+xfconf-query -c xfce4-terminal -p /color-foreground -s "#c5c5d4d4dbdb"
+xfconf-query -c xfce4-terminal -p /color-palette -s "rgb(0,0,0);rgb(209,82,77);rgb(0,143,91);rgb(190,149,45);rgb(72,175,199);rgb(150,52,128);rgb(0,142,142);rgb(158,170,176);rgb(149,166,173);rgb(255,95,95);rgb(71,207,133);rgb(226,215,115);rgb(120,213,235);rgb(239,115,219);rgb(99,208,200);rgb(224,231,233)"	
+}
+denim(){
+xfconf-query -c xfce4-terminal -p /color-background -s "#12111c1c1f1f"
+xfconf-query -c xfce4-terminal -p /color-foreground -s "#9b9bd5d5dbdb"
+xfconf-query -c xfce4-terminal -p /color-palette -s "rgb(0,0,0);rgb(196,62,47);rgb(0,136,87);rgb(190,149,45);rgb(56,152,183);rgb(150,52,128);rgb(0,142,142);rgb(158,170,176);rgb(153,163,172);rgb(255,95,95);rgb(71,207,133);rgb(226,215,115);rgb(110,195,215);rgb(239,115,219);rgb(99,208,200);rgb(224,231,233)"	
+}
+ink(){
+xfconf-query -c xfce4-terminal -p /color-background -s "#131316161717"
+xfconf-query -c xfce4-terminal -p /color-foreground -s "#c9c9d6d6d6d6"
+xfconf-query -c xfce4-terminal -p /color-palette -s "rgb(0,0,0);rgb(196,62,47);rgb(0,136,87);rgb(190,149,45);rgb(56,152,183);rgb(150,52,128);rgb(0,142,142);rgb(158,170,176);rgb(153,163,172);rgb(255,95,95);rgb(71,207,133);rgb(226,215,115);rgb(110,195,215);rgb(239,115,219);rgb(99,208,200);rgb(224,231,233)"	
+}
+forge-dark(){
+xfconf-query -c xfce4-terminal -p /color-background -s "#17171a1a1f1f"
+xfconf-query -c xfce4-terminal -p /color-foreground -s "#d9d9d9d9d9d9"
+xfconf-query -c xfce4-terminal -p /color-palette -s "rgb(0,0,0);rgb(196,62,47);rgb(0,136,87);rgb(190,149,45);rgb(56,152,183);rgb(150,52,128);rgb(0,142,142);rgb(158,170,176);rgb(153,163,172);rgb(255,95,95);rgb(71,207,133);rgb(226,215,115);rgb(110,195,215);rgb(239,115,219);rgb(99,208,200);rgb(224,231,233)"	
+}
+forge(){
+xfconf-query -c xfce4-terminal -p /color-background -s "#212125252b2b"
+xfconf-query -c xfce4-terminal -p /color-foreground -s "#d3d3d8d8dbdb"
+xfconf-query -c xfce4-terminal -p /color-palette -s "rgb(24,27,31);rgb(242,77,77);rgb(40,173,111);rgb(235,216,174);rgb(136,202,235);rgb(239,139,192);rgb(50,187,178);rgb(166,172,174);rgb(137,146,153);rgb(231,91,91);rgb(71,207,133);rgb(245,230,196);rgb(132,207,245);rgb(255,156,212);rgb(65,232,204);rgb(209,212,215)"
+}
+cube(){
+xfconf-query -c xfce4-terminal -p /color-background -s "#202021212424"
+xfconf-query -c xfce4-terminal -p /color-foreground -s "#d9d9d9d9d9d9"
+xfconf-query -c xfce4-terminal -p /color-palette -s "rgb(0,0,0);rgb(196,62,47);rgb(0,136,87);rgb(190,149,45);rgb(56,152,183);rgb(150,52,128);rgb(0,142,142);rgb(158,170,176);rgb(153,163,172);rgb(255,95,95);rgb(71,207,133);rgb(226,215,115);rgb(110,195,215);rgb(239,115,219);rgb(99,208,200);rgb(224,231,233)"	
+}
+ozark(){
+xfconf-query -c xfce4-terminal -p /color-background -s "#28282d2c3333"
+xfconf-query -c xfce4-terminal -p /color-foreground -s "#dbdbdbdbd9d9"
+xfconf-query -c xfce4-terminal -p /color-palette -s "rgb(24,27,31);rgb(242,77,77);rgb(40,173,111);rgb(235,216,174);rgb(136,202,235);rgb(239,139,192);rgb(50,187,178);rgb(166,172,174);rgb(137,146,153);rgb(231,91,91);rgb(71,207,133);rgb(245,230,196);rgb(132,207,245);rgb(255,156,212);rgb(65,232,204);rgb(209,212,215)"	
+}
+island(){
+xfconf-query -c xfce4-terminal -p /color-background -s "#2e2e32323838"
+xfconf-query -c xfce4-terminal -p /color-foreground -s "#e0e0e0e0dcdc"
+xfconf-query -c xfce4-terminal -p /color-palette -s "rgb(24,27,31);rgb(242,77,77);rgb(40,173,111);rgb(235,216,174);rgb(136,202,235);rgb(239,139,192);rgb(50,187,178);rgb(166,172,174);rgb(137,146,153);rgb(231,91,91);rgb(71,207,133);rgb(245,230,196);rgb(132,207,245);rgb(255,156,212);rgb(65,232,204);rgb(56,61,70)"	
+}
+adobe(){
+xfconf-query -c xfce4-terminal -p /color-background -s "#2b2b2a2a2929"
+xfconf-query -c xfce4-terminal -p /color-foreground -s "#d4d4d1d1c5c5"
+xfconf-query -c xfce4-terminal -p /color-palette -s "rgb(0,0,0);rgb(196,62,47);rgb(0,136,87);rgb(190,149,45);rgb(56,152,183);rgb(150,52,128);rgb(0,142,142);rgb(158,170,176);rgb(153,163,172);rgb(255,95,95);rgb(71,207,133);rgb(226,215,115);rgb(110,195,215);rgb(239,115,219);rgb(99,208,200);rgb(224,231,233)"	
+}
+drow(){
+xfconf-query -c xfce4-terminal -p /color-background -s "#2d2d2d2d2d2d"
+xfconf-query -c xfce4-terminal -p /color-foreground -s "#d9d9d9d9d7d7"
+xfconf-query -c xfce4-terminal -p /color-palette -s "rgb(0,0,0);rgb(196,62,47);rgb(0,136,87);rgb(190,149,45);rgb(56,152,183);rgb(150,52,128);rgb(0,142,142);rgb(158,170,176);rgb(153,163,172);rgb(255,95,95);rgb(71,207,133);rgb(226,215,115);rgb(110,195,215);rgb(239,115,219);rgb(99,208,200);rgb(224,231,233)"	
+}
+earth(){
+xfconf-query -c xfce4-terminal -p /color-background -s "#2e2e2e2e2e2e"
+xfconf-query -c xfce4-terminal -p /color-foreground -s "#d9d9d9d9d9d9"
+xfconf-query -c xfce4-terminal -p /color-palette -s "rgb(0,0,0);rgb(196,62,47);rgb(0,136,87);rgb(190,149,45);rgb(56,152,183);rgb(150,52,128);rgb(0,142,142);rgb(158,170,176);rgb(153,163,172);rgb(255,95,95);rgb(71,207,133);rgb(226,215,115);rgb(110,195,215);rgb(239,115,219);rgb(99,208,200);rgb(224,231,233)"	
+}
+adwaita-dark(){
+xfconf-query -c xfce4-terminal -p /color-background -s "#2d2d2d2d2d2d"
+xfconf-query -c xfce4-terminal -p /color-foreground -s "#d9d9d9d9d7d7"
+xfconf-query -c xfce4-terminal -p /color-palette -s "rgb(0,0,0);rgb(196,62,47);rgb(0,136,87);rgb(190,149,45);rgb(56,152,183);rgb(150,52,128);rgb(0,142,142);rgb(158,170,176);rgb(153,163,172);rgb(255,95,95);rgb(71,207,133);rgb(226,215,115);rgb(110,195,215);rgb(239,115,219);rgb(99,208,200);rgb(224,231,233)"	
+}
+cove(){
+xfconf-query -c xfce4-terminal -p /color-background -s "#2a2a36353838"
+xfconf-query -c xfce4-terminal -p /color-foreground -s "#b8b8d7d7dbdb"
+xfconf-query -c xfce4-terminal -p /color-palette -s "rgb(0,0,0);rgb(196,62,47);rgb(0,136,87);rgb(190,149,45);rgb(56,152,183);rgb(150,52,128);rgb(0,142,142);rgb(158,170,176);rgb(153,163,172);rgb(255,95,95);rgb(71,207,133);rgb(226,215,115);rgb(110,195,215);rgb(239,115,219);rgb(99,208,200);rgb(224,231,233)"	
+}
+ghost(){
+xfconf-query -c xfce4-terminal -p /color-background -s "#30303a3a3d3d"
+xfconf-query -c xfce4-terminal -p /color-foreground -s "#e8e8eeeef0f0"
+xfconf-query -c xfce4-terminal -p /color-palette -s "rgb(24,27,31);rgb(242,77,77);rgb(40,173,111);rgb(235,216,174);rgb(136,202,235);rgb(239,139,192);rgb(50,187,178);rgb(166,172,174);rgb(137,146,153);rgb(255,116,116);rgb(71,207,133);rgb(245,230,196);rgb(132,207,245);rgb(255,156,212);rgb(65,232,204);rgb(209,212,215)"	
+}
+mulberry(){
+xfconf-query -c xfce4-terminal -p /color-background -s "#1f1f28282c2c"
+xfconf-query -c xfce4-terminal -p /color-foreground -s "#f0f0f0f0f0f0"
+xfconf-query -c xfce4-terminal -p /color-palette -s "rgb(0,0,0);rgb(196,62,47);rgb(0,136,87);rgb(190,149,45);rgb(56,152,183);rgb(150,52,128);rgb(0,142,142);rgb(158,170,176);rgb(153,163,172);rgb(255,95,95);rgb(71,207,133);rgb(226,215,115);rgb(110,195,215);rgb(239,115,219);rgb(99,208,200);rgb(224,231,233)"	
+}
+broadwater(){
+xfconf-query -c xfce4-terminal -p /color-background -s "#1f1f28282c2c"
+xfconf-query -c xfce4-terminal -p /color-foreground -s "#bfbfd9d8f5f5"
+xfconf-query -c xfce4-terminal -p /color-palette -s "rgb(0,0,0);rgb(196,62,47);rgb(0,136,87);rgb(190,149,45);rgb(56,152,183);rgb(150,52,128);rgb(0,142,142);rgb(158,170,176);rgb(153,163,172);rgb(255,95,95);rgb(71,207,133);rgb(226,215,115);rgb(110,195,215);rgb(239,115,219);rgb(99,208,200);rgb(224,231,233)"
+	
+}
+adwaita(){
+xfconf-query -c xfce4-terminal -p /color-background -s "#1f1f28282c2c"
+xfconf-query -c xfce4-terminal -p /color-foreground -s "#f0f0f0f0f0f0"
+xfconf-query -c xfce4-terminal -p /color-palette -s "rgb(0,0,0);rgb(196,62,47);rgb(0,136,87);rgb(190,149,45);rgb(56,152,183);rgb(150,52,128);rgb(0,142,142);rgb(158,170,176);rgb(153,163,172);rgb(255,95,95);rgb(71,207,133);rgb(226,215,115);rgb(110,195,215);rgb(239,115,219);rgb(99,208,200);rgb(224,231,233)"	
+}
+
+
+export -f slate
+export -f arcadia
+export -f nightshade
+export -f fane
+export -f denim
+export -f ink
+export -f forge-dark
+export -f forge
+export -f cube
+export -f ozark
+export -f island
+export -f adobe
+export -f drow
+export -f earth
+export -f adwaita-dark
+export -f cove
+export -f ghost
+export -f mulberry
+export -f broadwater
+export -f adwaita
+
 yad --title "Terminal Colors" --escape-ok --borders=14 \
---form --center --width=440 --height=330 \
+--form --center --width=440 --height=320 \
 --button=" Exit!gtk-delete:0" \
 --text="Terminal Colors - Will not change GTK themes\n" --text-align=center \
 --window-icon=terminal \
     --form --columns=4 \
-    --field="Adobe":FBTN "xfce4-term-colors adobe" \
-    --field="Adwaita Dark":FBTN "xfce4-term-colors lilidog-drow" \
-    --field="Arcadia":FBTN "xfce4-term-colors arcadia" \
-    --field="Cube":FBTN "xfce4-term-colors cube" \
-    --field="Denim":FBTN "xfce4-term-colors denim" \
-    --field="Drow":FBTN "xfce4-term-colors lilidog-drow" \
-    --field="Earth":FBTN "xfce4-term-colors lilidog-earth" \
-    --field="Fane":FBTN "xfce4-term-colors fane" \
-    --field="Forge":FBTN "xfce4-term-colors forge" \
-    --field=" Forge Dark ":FBTN "xfce4-term-colors forge-dark" \
-    --field="Ink":FBTN "xfce4-term-colors ink" \
-    --field="Island":FBTN "xfce4-term-colors island" \
-    --field=" Nightshade ":FBTN "xfce4-term-colors nightshade" \
-    --field="Ozark":FBTN "xfce4-term-colors ozark" \
-    --field="Slate":FBTN "xfce4-term-colors lilidog-slate" \
-    --field="Adwaita":FBTN "xfce4-term-colors adwaita-ld" \
-    --field=" Broadwater ":FBTN "xfce4-term-colors broadwater" \
-    --field="Cove":FBTN "xfce4-term-colors cove" \
-    --field="Ghost":FBTN "xfce4-term-colors ghost" \
-    --field="Mulberry":FBTN "xfce4-term-colors mulberry"
+    --field="Adobe":FBTN "bash -c adobe" \
+    --field="Adwaita Dark":FBTN "bash -c drow" \
+    --field="Arcadia":FBTN "bash -c arcadia" \
+    --field="Cube":FBTN "bash -c cube" \
+    --field="Denim!":FBTN "bash -c denim" \
+    --field="Drow":FBTN "bash -c drow" \
+    --field="Earth":FBTN "bash -c earth" \
+    --field="Fane":FBTN "bash -c fane" \
+    --field="Forge":FBTN "bash -c forge" \
+    --field="Forge Dark":FBTN "bash -c forge-dark" \
+    --field="Ink":FBTN "bash -c ink" \
+    --field="Island":FBTN "bash -c island" \
+    --field="Nightshade":FBTN "bash -c nightshade" \
+    --field="Ozark":FBTN "bash -c ozark" \
+    --field="Slate":FBTN "bash -c slate" \
+    --field="Adwaita":FBTN "bash -c adwaita" \
+    --field="Broadwater":FBTN "bash -c broadwater" \
+    --field="Cove":FBTN "bash -c cove" \
+    --field="Ghost":FBTN "bash -c ghost" \
+    --field="Mulberry":FBTN "bash -c mulberry"
