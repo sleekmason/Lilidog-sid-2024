@@ -23,11 +23,11 @@ read -p "   This script will download and install VirtualBox:
     Or close this terminal window to quit the install." ;   
     if : >/dev/tcp/8.8.8.8/53; then
 echo ""   
-   sudo echo 'deb http://deb.debian.org/debian bookworm-backports main' | sudo tee /etc/apt/sources.list.d/bookworm-backports.list &&
+   sudo echo 'deb http://deb.debian.org/debian trixie-backports main' | sudo tee /etc/apt/sources.list.d/trixie-backports.list &&
    sudo apt update && sudo apt install fasttrack-archive-keyring &&
-   sudo echo 'deb https://fasttrack.debian.net/debian-fasttrack/ bookworm-fasttrack main contrib' | sudo tee /etc/apt/sources.list.d/fasttrack.list;
-   sudo echo 'deb https://fasttrack.debian.net/debian-fasttrack/ bookworm-backports-staging main contrib' | sudo tee -a /etc/apt/sources.list.d/fasttrack.list &&
-   sudo apt update && sudo apt install --install-recommends -y virtualbox/bookworm-fasttrack &&  
+   sudo echo 'deb https://fasttrack.debian.net/debian-fasttrack/ trixie-fasttrack main contrib' | sudo tee /etc/apt/sources.list.d/fasttrack.list;
+   sudo echo 'deb https://fasttrack.debian.net/debian-fasttrack/ trixie-backports-staging main contrib' | sudo tee -a /etc/apt/sources.list.d/fasttrack.list &&
+   sudo apt update && sudo apt install --install-recommends -y virtualbox/trixie-fasttrack &&  
 sed -i '/Virtualbox,         virtualbox,       virtualbox/d' ~/.config/jgmenu/prepend.csv &&
 sed -i '/Root Folders,^checkout(rootfiles),folder/a Virtualbox,         virtualbox,       virtualbox' ~/.config/jgmenu/prepend.csv
 killall -q jgmenu
