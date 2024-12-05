@@ -1,8 +1,8 @@
 [Desktop Entry]
 Type=Application
-Name=Wallpapers
-Exec=feh-set-wallpaper
+Name=Wallpaper Maker
+Exec=wallpaper-maker
 StartupNotify=false
 Terminal=false
-Icon=preferences-desktop-wallpaper
+Icon=applications-other
 Categories=ld-misc-tools;
