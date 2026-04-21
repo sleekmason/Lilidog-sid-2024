@@ -9,6 +9,7 @@ Everything is easily accessible, with numerous options to customize further.
 
 Website: https://sourceforge.net/projects/lilidog/ <br/>
 Forum Link: https://sourceforge.net/p/lilidog/discussion/ <br/>
+Current releases: https://sourceforge.net/projects/lilidog/files/Releases/
 
 Download link to the latest build:   <a href="https://sourceforge.net/projects/lilidog/files/latest/download"><img alt="Download Lilidog" src="https://a.fsdn.com/con/app/sf-download-button" width=276 height=48 srcset="https://a.fsdn.com/con/app/sf-download-button?button_size=2x 2x"></a>
 
@@ -23,10 +24,6 @@ There are four general builds: full, minimal, minimal-i386, and beardog.
 - Lilidog-i386 - Uses the same base packages as the amd64 minimal version, but for older 32 bit hardware. You may find you need to boot with the kernel parameter 'forcepae' if you have difficulties.    
 
 - Beardog - (Approx. 920 packages), is the 'bare' version of lilidog, allowing users to choose most of what they want. A general knowledge of linux is recommended.
-
-#### NOTE - The DOWNLOAD button defaults to the full version. Click on FILES, and then RELEASES to access the other builds.
-
-<a href="https://sourceforge.net/projects/lilidog/files/latest/download"><img alt="Download Lilidog" src="https://a.fsdn.com/con/app/sf-download-button" width=276 height=48 srcset="https://a.fsdn.com/con/app/sf-download-button?button_size=2x 2x"></a>
 
 #### Current Releases:
 
